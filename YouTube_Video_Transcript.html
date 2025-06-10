@@ -7,26 +7,45 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-  .youtube-btn {
+   .youtube-btn {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 150px;
+            height: 150px;
             background-color: #FF0000;
-            color: white;
-            padding: 20px 40px;
-            border: none;
             border-radius: 50%;
-            font-size: 24px;
-            font-weight: bold;
-            cursor: pointer;
+            color: white;
             text-decoration: none;
-            display: inline-block;
-            transition: all 0.3s;
+            font-family: 'Roboto', Arial, sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+            text-transform: uppercase;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            margin: 20px 0;
+            transition: transform 0.2s, box-shadow 0.2s;
+            position: relative;
+            overflow: hidden;
         }
         
         .youtube-btn:hover {
-            background-color: #CC0000;
             transform: scale(1.05);
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        
+        .play-icon {
+            width: 0;
+            height: 0;
+            border-top: 20px solid transparent;
+            border-left: 30px solid white;
+            border-bottom: 20px solid transparent;
+            margin-bottom: 8px;
+            margin-left: 5px; /* Смещение для визуального центра */
+        }
+        
+        .btn-text {
+            margin-top: 5px;
+        }
         
         .instruction-step {
             margin: 30px 0;
@@ -51,11 +70,14 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>YouTube Video Transcript Installed</h1>
+            <h1>Install YouTube Video Transcript</h1>
         </div>
 
          <div class="button-container">
-             <a href="https://www.youtube.com/watch?v=oO8w6XcXJUs&t=426s" class="youtube-button">Open YouTube</a>
+              <a href="https://www.youtube.com/watch?v=oO8w6XcXJUs&t=426s" class="youtube-btn">
+        <div class="play-icon"></div>
+        <div class="btn-text">Open Youtube</div>
+    </a>
         </div>
 
         <div class="message">
