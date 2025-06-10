@@ -33,22 +33,34 @@
 <html>
 <head>
     <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
         .youtube-btn {
-            background-color: #FF0000; /* Красный цвет YouTube */
+            background-color: #FF0000;
             color: white;
-            padding: 12px 24px;
+            padding: 20px 40px; /* Увеличенные размеры */
             border: none;
-            border-radius: 25px; /* Закругленные края */
-            font-size: 16px;
+            border-radius: 30px; /* Более закругленные края */
+            font-size: 24px; /* Увеличенный текст */
             font-weight: bold;
             cursor: pointer;
             text-decoration: none;
             display: inline-block;
-            transition: background-color 0.3s;
+            transition: all 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень для объема */
         }
         
         .youtube-btn:hover {
-            background-color: #CC0000; /* Темнее красный при наведении */
+            background-color: #CC0000;
+            transform: scale(1.05); /* Легкое увеличение при наведении */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
         }
     </style>
 </head>
@@ -56,7 +68,6 @@
     <a href="https://www.youtube.com/watch?v=xAg7z6u4NE8" class="youtube-btn">Go to Youtube</a>
 </body>
 </html>
-
         <div class="footer">
             <p>&copy; 2025 YouTube Transcript</p>
         </div>
