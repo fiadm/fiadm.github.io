@@ -8,70 +8,74 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-    <style>
-        .youtube-btn {
-            background-color: #d23b2d;
-            color: white;
-            padding: 20px 40px;
-            border: none;
-            border-radius: 30px;
-            font-size: 22px;
-            font-weight: bold;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
-            transition: all 0.3s;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            margin: 30px 0;
+   <style>
+    .youtube-btn {
+        background-color: #d23b2d;
+        color: white;
+        padding: 20px 40px;
+        border: none;
+        border-radius: 30px;
+        font-size: 22px;
+        font-weight: bold;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+        transition: all 0.3s;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        margin: 30px 0;
+    }
+
+    .youtube-btn:hover {
+        background-color: #b83226;
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .title {
+        color: #000;
+        white-space: nowrap;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .subtitle {
+        font-size: 26px;
+        font-weight: bold;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .youtube-link {
+        color: #d23b2d;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    .youtube-link:hover {
+        text-decoration: underline;
+    }
+
+    .instruction-image {
+        max-width: 110%;
+        height: auto;
+        margin-top: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .footer {
+        margin-top: 60px;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    @media (max-width: 600px) {
+        .title {
+            white-space: normal;
         }
+    }
+</style>
 
-        .youtube-btn:hover {
-            background-color: #b83226;
-            transform: scale(1.05);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-        }
-
-        .subtitle span {
-            color: #d23b2d;
-        }
-
-      .instruction-image {
-    max-width: 110%; /* было 100% */
-    height: auto;
-    margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-
-
-        .footer {
-            margin-top: 60px;
-            padding: 20px 0;
-        }
-
-     .title {
-    color: #000;
-    white-space: nowrap;
-    font-weight: 700;
-    text-align: center;
-}
-
-.subtitle {
-    font-size: 26px;
-    font-weight: bold;
-    margin-top: 20px;
-    text-align: center;
-
-        .youtube-link {
-    color: #d23b2d;
-    font-weight: 700;
-    text-decoration: none;
-}
-
-.youtube-link:hover {
-    text-decoration: underline;
-}
-    </style>
 </head>
 
 <body>
@@ -80,7 +84,7 @@
     <!-- HEADER -->
     <div class="header">
         <h1 class="title">
-    Congratulations! You have installed YouTube Transcript
+    🎉 Congratulations! You have installed YouTube Transcript 🎉
 </h1>
 
         <div class="subtitle">
